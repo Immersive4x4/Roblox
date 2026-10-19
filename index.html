@@ -2,103 +2,317 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Immersive4x4 | Roblox Scripter Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Header -->
+
+  <!-- Background Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navbar -->
   <header>
-    <nav>
-      <h1 class="logo">Immersive4x4</h1>
+    <nav class="nav-container">
+      <div class="logo">
+        <span class="logo-badge">S1</span>
+        <span class="logo-text">IMMERSIVE<span class="highlight">4X4</span></span>
+      </div>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Past Work</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="#services"><i class="fa-solid fa-code"></i> Services</a></li>
+        <li><a href="#projects"><i class="fa-solid fa-gamepad"></i> Work</a></li>
+        <li><a href="#pricing"><i class="fa-solid fa-tags"></i> Pricing</a></li>
+        <li><a href="#contact" class="nav-btn"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-text fade-in">
-      <h2>Portfolio</h2>
-      <p>Crafting professional Roblox systems, smooth mechanics, and polished gameplay experiences.</p>
-      <a href="#projects" class="btn">Explore My Work</a>
+    <div class="hero-content">
+      <div class="status-badge">
+        <span class="pulse-dot"></span> Available Everyday for Hire
+      </div>
+      <h1 class="hero-title">
+        High-Performance <br>
+        <span class="neon-text">Roblox Scripting</span> & Systems
+      </h1>
+      <p class="hero-subtext">
+        5+ Years Experience Crafting Smooth Game Mechanics, Datastores, Tool Systems, & Custom Gameplay Logic.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary-btn"><i class="fa-solid fa-fire"></i> View Past Work</a>
+        <a href="#contact" class="btn secondary-btn"><i class="fa-brands fa-discord"></i> Hire Me</a>
+      </div>
+      
+      <!-- Quick Highlights -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Years Exp.</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Availability</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Reliable</span>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about slide-up">
-    <h2>About Me</h2>
-    <p>
-      I'm <strong>Immersive</strong>, a Roblox scripter and general programmer.  
-      I deliver fast deliveries, I’m transparent with buyers, and I respond quickly to questions.  
-      I have over <strong>5 years</strong> of experience in the Roblox development scene.
-    </p>
+  <section id="about" class="about-section">
+    <div class="section-header">
+      <h2>About Me</h2>
+      <div class="header-line"></div>
+    </div>
+    <div class="about-card glass-panel">
+      <div class="about-text">
+        <p>
+          Hey! I'm <strong>Immersive</strong>, a professional Roblox Scripter and general game developer with over <strong>5+ years of experience</strong> in Lua scripting and game engine mechanics.
+        </p>
+        <p>
+          I specialize in delivering fast, scalable, and fully optimized code. Whether you need bug fixes, complete game mechanics, or complex custom data systems, I ensure rapid turnaround times, high transparency, and smooth communication throughout the development process.
+        </p>
+        <div class="perks-grid">
+          <div class="perk-item"><i class="fa-solid fa-bolt"></i> Fast Deliveries</div>
+          <div class="perk-item"><i class="fa-solid fa-comments"></i> Quick Responses</div>
+          <div class="perk-item"><i class="fa-solid fa-bug"></i> Bug-Free Guarantee</div>
+          <div class="perk-item"><i class="fa-solid fa-handshake"></i> Clear Communication</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Offered -->
+  <section id="services" class="services-section">
+    <div class="section-header">
+      <h2>What I Offer</h2>
+      <div class="header-line"></div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card glass-panel">
+        <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <h3>Bugfixing & Polish</h3>
+        <p>Fixing broken scripts, optimizing laggy code, patching exploits, and polishing existing game mechanics.</p>
+      </div>
+      <div class="service-card glass-panel">
+        <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Datastores & Inventory</h3>
+        <p>Secure ProfileService/DataStore2 integration, persistent player data, inventory management, and trading systems.</p>
+      </div>
+      <div class="service-card glass-panel">
+        <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <h3>Custom Systems</h3>
+        <p>MM2 style voting setups, advanced weapon & tool mechanics, item spawning engines, and full round managers.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects fade-in">
-    <h2>Past Work</h2>
-    <div class="project-grid">
+  <section id="projects" class="projects-section">
+    <div class="section-header">
+      <h2>Featured Past Work</h2>
+      <div class="header-line"></div>
+    </div>
 
+    <div class="project-grid">
+      
       <!-- Project 1 -->
-      <div class="project-card">
-        <img src="assets/project1.jpg" alt="Voting System">
+      <div class="project-card glass-panel">
+        <div class="card-media">
+          <img src="assets/project1.jpg" alt="Voting System Preview" onerror="this.src='https://via.placeholder.com/600x350/151515/ff4757?text=Voting+System+(MM2)'">
+          <span class="tag">System</span>
+        </div>
         <div class="project-info">
-          <h3>Voting System (MM2)</h3>
-          <p>Advanced, reliable voting system.</p>
+          <h3>Voting System (MM2 Style)</h3>
+          <p>Advanced, server-replicated, reliable voting UI and map selection system inspired by Murder Mystery 2.</p>
         </div>
       </div>
 
       <!-- Project 2 -->
-      <div class="project-card">
-        <img src="assets/project2.jpg" alt="Advanced Tool System">
+      <div class="project-card glass-panel">
+        <div class="card-media">
+          <img src="assets/project2.jpg" alt="Advanced Tool System Preview" onerror="this.src='https://via.placeholder.com/600x350/151515/ff4757?text=Advanced+Tool+System'">
+          <span class="tag">Mechanics</span>
+        </div>
         <div class="project-info">
           <h3>Advanced Tool System</h3>
-          <p>Interactable, smooth, reliable tool system.</p>
+          <p>Interactable, smooth, highly responsive tool and interaction mechanics tailored for action/RPG titles.</p>
         </div>
       </div>
 
       <!-- Project 3 -->
-      <div class="project-card">
-        <img src="assets/project3.jpg" alt="Inventory System">
+      <div class="project-card glass-panel">
+        <div class="card-media">
+          <img src="assets/project3.jpg" alt="Inventory System Preview" onerror="this.src='https://via.placeholder.com/600x350/151515/ff4757?text=Inventory+System'">
+          <span class="tag">Datastore</span>
+        </div>
         <div class="project-info">
-          <h3>Inventory System</h3>
-          <p>Datastored, reliable, smooth inventory system (don’t mind the UI 😅).</p>
+          <h3>Datastored Inventory System</h3>
+          <p>Full inventory management framework featuring secure datastores, equipping mechanics, and item sorting.</p>
         </div>
       </div>
 
-      <!-- Project 4 (video) -->
-      <div class="project-card video-card">
-        <video autoplay muted loop playsinline>
-          <source src="assets/project4.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <!-- Project 4 (Video) -->
+      <div class="project-card glass-panel">
+        <div class="card-media">
+          <video autoplay muted loop playsinline poster="assets/project4.jpg">
+            <source src="assets/project4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <span class="tag">Video Demo</span>
+        </div>
         <div class="project-info">
-          <h3>Smooth Tool System</h3>
-          <p>Item spawning, tool mechanics, all fully datastored.</p>
+          <h3>Smooth Tool & Spawner Engine</h3>
+          <p>Dynamic item spawning system paired with smooth tool handling, all backed by efficient datastoring.</p>
         </div>
       </div>
 
     </div>
   </section>
 
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing-section">
+    <div class="section-header">
+      <h2>Rates & Pricing</h2>
+      <p class="section-subtitle">Affordable, transparent prices. Per-task pricing preferred (No percentages unless upfront payment is provided).</p>
+      <div class="header-line"></div>
+    </div>
+
+    <div class="pricing-banner">
+      <i class="fa-brands fa-paypal"></i> <strong>PAYPAL PREFERRED:</strong> PayPal rates are ALWAYS cheaper than Robux!
+    </div>
+
+    <div class="pricing-grid">
+      
+      <!-- Tier 1 -->
+      <div class="pricing-card glass-panel">
+        <div class="tier-title">Simple / Bugfix</div>
+        <div class="price-box">
+          <span class="price">$5 <span class="currency">USD</span></span>
+          <span class="or">OR</span>
+          <span class="robux">1,000 Robux</span>
+        </div>
+        <ul class="tier-features">
+          <li><i class="fa-solid fa-check"></i> Bug fixes & script debugging</li>
+          <li><i class="fa-solid fa-check"></i> Minor code tweaks</li>
+          <li><i class="fa-solid fa-check"></i> Simple single-purpose scripts</li>
+          <li><i class="fa-solid fa-check"></i> Fast same-day turnaround</li>
+        </ul>
+        <a href="#contact" class="btn secondary-btn">Get Started</a>
+      </div>
+
+      <!-- Tier 2 -->
+      <div class="pricing-card glass-panel featured">
+        <div class="popular-badge">Most Popular</div>
+        <div class="tier-title">Intermediate</div>
+        <div class="price-box">
+          <span class="price">$15 - $20 <span class="currency">USD</span></span>
+          <span class="or">OR</span>
+          <span class="robux">2,500 Robux</span>
+        </div>
+        <ul class="tier-features">
+          <li><i class="fa-solid fa-check"></i> Custom gameplay mechanics</li>
+          <li><i class="fa-solid fa-check"></i> Interactive UI scripting</li>
+          <li><i class="fa-solid fa-check"></i> Voting & round systems</li>
+          <li><i class="fa-solid fa-check"></i> Tool & interaction setups</li>
+        </ul>
+        <a href="#contact" class="btn primary-btn">Order Intermediate</a>
+      </div>
+
+      <!-- Tier 3 -->
+      <div class="pricing-card glass-panel">
+        <div class="tier-title">Advanced</div>
+        <div class="price-box">
+          <span class="price">$50+ <span class="currency">USD</span></span>
+          <span class="or">OR</span>
+          <span class="robux">10,000+ Robux</span>
+        </div>
+        <ul class="tier-features">
+          <li><i class="fa-solid fa-check"></i> Full inventory & Datastore systems</li>
+          <li><i class="fa-solid fa-check"></i> Complete game frameworks</li>
+          <li><i class="fa-solid fa-check"></i> Complex combat / RPG mechanics</li>
+          <li><i class="fa-solid fa-check"></i> Priority support & adjustments</li>
+        </ul>
+        <a href="#contact" class="btn secondary-btn">Discuss Project</a>
+      </div>
+
+    </div>
+    <p class="pricing-note">* All prices are negotiable depending on scope and requirements.</p>
+  </section>
+
   <!-- Contact Section -->
-  <section id="contact" class="contact slide-up">
-    <h2>Contact Me</h2>
-    <p>Let’s connect! You can find me here:</p>
-    <div class="contact-links">
-      <a href="https://github.com/Immersive4x4" target="_blank">GitHub</a>
-      <a href="https://discord.com/users/Immersive4x4" target="_blank">Discord: @Immersive4x4</a>
-      <a href="mailto:immersive69420@gmail.com">Email</a>
+  <section id="contact" class="contact-section">
+    <div class="section-header">
+      <h2>Let's Work Together</h2>
+      <p class="section-subtitle">Interested in hiring me? Drop a message on Discord or send an email!</p>
+      <div class="header-line"></div>
+    </div>
+
+    <div class="contact-cards">
+      
+      <!-- Discord Card -->
+      <div class="contact-card glass-panel">
+        <i class="fa-brands fa-discord contact-icon"></i>
+        <h3>Discord</h3>
+        <p>Fastest response time</p>
+        <span class="contact-value">@Immersive4x4</span>
+        <button class="btn primary-btn copy-btn" onclick="copyDiscord()">
+          <i class="fa-regular fa-copy"></i> Copy Username
+        </button>
+      </div>
+
+      <!-- GitHub Card -->
+      <div class="contact-card glass-panel">
+        <i class="fa-brands fa-github contact-icon"></i>
+        <h3>GitHub</h3>
+        <p>Check out code repos</p>
+        <span class="contact-value">Immersive4x4</span>
+        <a href="https://github.com/Immersive4x4" target="_blank" class="btn secondary-btn">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit GitHub
+        </a>
+      </div>
+
+      <!-- Email Card -->
+      <div class="contact-card glass-panel">
+        <i class="fa-solid fa-envelope contact-icon"></i>
+        <h3>Email</h3>
+        <p>For business inquiries</p>
+        <span class="contact-value">immersive69420@gmail.com</span>
+        <a href="mailto:immersive69420@gmail.com" class="btn secondary-btn">
+          <i class="fa-solid fa-paper-plane"></i> Send Email
+        </a>
+      </div>
+
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Immersive4x4 — Roblox Portfolio</p>
+    <div class="footer-content">
+      <p>© 2025 Immersive4x4 — Roblox Scripter Portfolio</p>
+      <p class="availability-status"><span class="pulse-dot"></span> Available Everyday</p>
+    </div>
   </footer>
+
+  <!-- Toast Notification for copying -->
+  <div id="toast" class="toast">Copied Discord tag to clipboard!</div>
+
+  <script>
+    function copyDiscord() {
+      navigator.clipboard.writeText("Immersive4x4");
+      const toast = document.getElementById("toast");
+      toast.classList.add("show");
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 3000);
+    }
+  </script>
 </body>
 </html>
