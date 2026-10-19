@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Immersive4x4 | Senior Roblox Scripter & Game Developer</title>
-  
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  
+
   <!-- Google Fonts: Inter & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -136,8 +136,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <!-- Logo -->
       <a href="#" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center font-display font-black text-white text-xl shadow-lg shadow-brand-500/30 group-hover:scale-105 transition-transform duration-300">
-          S1
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-white shadow-lg shadow-brand-500/30 group-hover:scale-105 transition-transform duration-300">
+          <i data-lucide="file-code-2" class="w-5 h-5"></i>
         </div>
         <div>
           <span class="font-display font-bold text-xl tracking-wider text-white group-hover:text-brand-500 transition-colors">IMMERSIVE<span class="text-brand-500">4x4</span></span>
@@ -193,6 +193,12 @@
 
   <!-- Main Hero Section -->
   <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 px-4 sm:px-6 lg:px-8 bg-grid-pattern overflow-hidden">
+    <!-- Hero Background Image -->
+    <div class="absolute inset-0 z-0 pointer-events-none">
+      <img src="assets/hero.jpg" alt="" class="w-full h-full object-cover opacity-20" />
+      <div class="absolute inset-0 bg-gradient-to-b from-dark-900/80 via-dark-900/70 to-dark-900"></div>
+    </div>
+
     <!-- Glow Effect Backdrops -->
     <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-500/20 rounded-full blur-[120px] pointer-events-none"></div>
     <div class="absolute top-1/3 right-10 w-72 h-72 bg-brand-600/10 rounded-full blur-[100px] pointer-events-none"></div>
@@ -204,7 +210,7 @@
         <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
         <span class="text-brand-500 font-bold">AVAILABLE NOW</span>
         <span class="text-gray-500">|</span>
-        <span>Everyday Response & Speed Delivery</span>
+        <span>Quick replies, fast delivery.</span>
       </div>
 
       <!-- Main Headline -->
@@ -272,7 +278,7 @@
 
             <div class="space-y-3 z-10">
               <h3 class="text-2xl font-display font-bold text-white">Immersive4x4</h3>
-              <p class="text-xs text-gray-400 font-mono">Specializing in Luau, Modular Systems, DataStore v2, Custom Tool Mechanics & UI Logic.</p>
+              <p class="text-xs text-gray-400 font-mono">Specializing in Luau, Modular Systems, DataStore, Custom Tool Mechanics & UI Logic.</p>
             </div>
 
             <div class="pt-4 border-t border-gray-800/80 flex items-center justify-between text-xs text-gray-400 font-mono">
@@ -434,8 +440,8 @@
 
             <!-- Price display -->
             <div class="py-4 border-y border-gray-800/80">
-              <div class="val-usd text-4xl font-display font-black text-white">$5 <span class="text-xs font-sans text-gray-400 font-normal">USD</span></div>
-              <div class="val-robux hidden text-3xl font-display font-black text-brand-500">1,000 <span class="text-xs font-sans text-gray-400 font-normal">Robux</span></div>
+              <div class="val-usd text-4xl font-display font-black text-white">$5 - $15 <span class="text-xs font-sans text-gray-400 font-normal">USD</span></div>
+              <div class="val-robux hidden text-3xl font-display font-black text-brand-500">2,500 <span class="text-xs font-sans text-gray-400 font-normal">Robux</span></div>
               <span class="text-[11px] font-mono text-gray-400 mt-1 block">Price negotiable based on scope</span>
             </div>
 
@@ -480,8 +486,8 @@
 
             <!-- Price display -->
             <div class="py-4 border-y border-gray-800/80">
-              <div class="val-usd text-4xl font-display font-black text-white">$15 - $20 <span class="text-xs font-sans text-gray-400 font-normal">USD</span></div>
-              <div class="val-robux hidden text-3xl font-display font-black text-brand-500">2,500 <span class="text-xs font-sans text-gray-400 font-normal">Robux</span></div>
+              <div class="val-usd text-4xl font-display font-black text-white">$15 - $50 <span class="text-xs font-sans text-gray-400 font-normal">USD</span></div>
+              <div class="val-robux hidden text-3xl font-display font-black text-brand-500">5,000 <span class="text-xs font-sans text-gray-400 font-normal">Robux</span></div>
               <span class="text-[11px] font-mono text-gray-400 mt-1 block">Best value for feature additions</span>
             </div>
 
@@ -588,12 +594,8 @@
         <!-- Project 1: Voting System -->
         <div class="project-card glass-card rounded-3xl overflow-hidden group border border-gray-800" data-category="systems">
           <div class="relative h-60 bg-dark-900 overflow-hidden flex items-center justify-center">
-            <!-- Graphical Placeholder SVG Simulation -->
-            <div class="absolute inset-0 bg-gradient-to-br from-brand-900/30 to-dark-900 flex items-center justify-center">
-              <svg class="w-24 h-24 text-brand-500/40 group-hover:scale-110 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-            </div>
+            <img src="assets/project1.jpg" alt="Voting System (MM2) project preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900/80 via-transparent to-transparent"></div>
             <div class="absolute top-4 left-4">
               <span class="px-3 py-1 rounded-full bg-dark-900/80 backdrop-blur-md border border-gray-700 text-[10px] font-mono text-brand-500 font-bold uppercase">
                 MM2-Style Logic
@@ -618,11 +620,8 @@
         <!-- Project 2: Advanced Tool System -->
         <div class="project-card glass-card rounded-3xl overflow-hidden group border border-gray-800" data-category="tools">
           <div class="relative h-60 bg-dark-900 overflow-hidden flex items-center justify-center">
-            <div class="absolute inset-0 bg-gradient-to-br from-brand-900/30 to-dark-900 flex items-center justify-center">
-              <svg class="w-24 h-24 text-brand-500/40 group-hover:scale-110 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11 4a2 2 0 114 0v1a2 2 0 01-2 2 2 2 0 01-2-2V4zM4 7a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V7z"></path>
-              </svg>
-            </div>
+            <img src="assets/project2.jpg" alt="Advanced Tool System project preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900/80 via-transparent to-transparent"></div>
             <div class="absolute top-4 left-4">
               <span class="px-3 py-1 rounded-full bg-dark-900/80 backdrop-blur-md border border-gray-700 text-[10px] font-mono text-brand-500 font-bold uppercase">
                 Tool Mechanics
@@ -647,11 +646,8 @@
         <!-- Project 3: Inventory System -->
         <div class="project-card glass-card rounded-3xl overflow-hidden group border border-gray-800" data-category="systems">
           <div class="relative h-60 bg-dark-900 overflow-hidden flex items-center justify-center">
-            <div class="absolute inset-0 bg-gradient-to-br from-brand-900/30 to-dark-900 flex items-center justify-center">
-              <svg class="w-24 h-24 text-brand-500/40 group-hover:scale-110 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
-              </svg>
-            </div>
+            <img src="assets/project3.jpg" alt="Inventory System project preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900/80 via-transparent to-transparent"></div>
             <div class="absolute top-4 left-4">
               <span class="px-3 py-1 rounded-full bg-dark-900/80 backdrop-blur-md border border-gray-700 text-[10px] font-mono text-brand-500 font-bold uppercase">
                 DataStored
@@ -676,11 +672,11 @@
         <!-- Project 4: Smooth Tool Spawning & Persistence -->
         <div class="project-card glass-card rounded-3xl overflow-hidden group border border-gray-800" data-category="tools">
           <div class="relative h-60 bg-dark-900 overflow-hidden flex items-center justify-center">
-            <div class="absolute inset-0 bg-gradient-to-br from-brand-900/30 to-dark-900 flex items-center justify-center">
-              <svg class="w-24 h-24 text-brand-500/40 group-hover:scale-110 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
+            <video class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" autoplay muted loop playsinline preload="metadata" aria-label="Smooth Tool and Item Spawner project preview">
+              <source src="assets/project4.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900/80 via-transparent to-transparent"></div>
             <div class="absolute top-4 left-4">
               <span class="px-3 py-1 rounded-full bg-dark-900/80 backdrop-blur-md border border-gray-700 text-[10px] font-mono text-brand-500 font-bold uppercase">
                 Spawning Mechanics
@@ -809,7 +805,7 @@
     // Initialize Lucide Icons
     lucide.createIcons();
 
-    <!-- Mobile Menu Toggle -->
+    // Mobile Menu Toggle
     const menuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     
@@ -821,7 +817,7 @@
       link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
     });
 
-    <!-- Copy Discord Function -->
+    // Copy Discord Function
     function copyDiscord(tag) {
       const el = document.createElement('textarea');
       el.value = tag;
@@ -833,7 +829,7 @@
       showToast(`Copied "${tag}" to clipboard!`);
     }
 
-    <!-- Toast Notification Function -->
+    // Toast Notification Function
     function showToast(msg) {
       const toast = document.getElementById('toast');
       const toastMsg = document.getElementById('toast-msg');
@@ -848,7 +844,7 @@
       }, 3000);
     }
 
-    <!-- Currency Toggle Logic -->
+    // Currency Toggle Logic
     function setCurrencyMode(mode) {
       const btnUsd = document.getElementById('btn-show-usd');
       const btnRobux = document.getElementById('btn-show-robux');
@@ -870,7 +866,7 @@
       }
     }
 
-    <!-- Modal Popup Logic -->
+    // Modal Popup Logic
     function openModal(title, desc) {
       document.getElementById('modal-title').innerText = title;
       document.getElementById('modal-desc').innerText = desc;
@@ -881,7 +877,7 @@
       document.getElementById('project-modal').classList.add('hidden');
     }
 
-    <!-- Project Filtering Logic -->
+    // Project Filtering Logic
     function filterProjects(category) {
       const cards = document.querySelectorAll('.project-card');
       const btns = document.querySelectorAll('.proj-filter-btn');
@@ -903,7 +899,7 @@
       });
     }
 
-    <!-- Ambient Floating Canvas Background Animation -->
+    // Ambient Floating Canvas Background Animation
     window.onload = function() {
       const canvas = document.getElementById('ambient-canvas');
       const ctx = canvas.getContext('2d');
