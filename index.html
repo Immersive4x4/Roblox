@@ -5,13 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Immersive4x4 | Senior Roblox Scripter & Game Developer</title>
 
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Google Fonts: Inter & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
@@ -22,39 +18,18 @@
       theme: {
         extend: {
           colors: {
-            brand: {
-              50: '#fff1f2',
-              100: '#ffe4e6',
-              500: '#ff4757',
-              600: '#e84118',
-              700: '#c21225',
-              glow: '#ff6b81'
-            },
-            dark: {
-              900: '#090a0f',
-              800: '#0f111a',
-              700: '#171a26',
-              600: '#212538'
-            }
+            brand: { 50: '#fff1f2', 100: '#ffe4e6', 500: '#ff4757', 600: '#e84118', 700: '#c21225', glow: '#ff6b81' },
+            dark: { 900: '#090a0f', 800: '#0f111a', 700: '#171a26', 600: '#212538' }
           },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            display: ['Outfit', 'sans-serif']
-          },
+          fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Outfit', 'sans-serif'] },
           animation: {
             'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
             'float': 'float 6s ease-in-out infinite',
             'glow-pulse': 'glow 2s ease-in-out infinite alternate',
           },
           keyframes: {
-            float: {
-              '0%, 100%': { transform: 'translateY(0px)' },
-              '50%': { transform: 'translateY(-10px)' },
-            },
-            glow: {
-              '0%': { filter: 'drop-shadow(0 0 10px rgba(255, 71, 87, 0.4))' },
-              '100%': { filter: 'drop-shadow(0 0 25px rgba(255, 71, 87, 0.8))' }
-            }
+            float: { '0%, 100%': { transform: 'translateY(0px)' }, '50%': { transform: 'translateY(-10px)' } },
+            glow: { '0%': { filter: 'drop-shadow(0 0 10px rgba(255, 71, 87, 0.4))' }, '100%': { filter: 'drop-shadow(0 0 25px rgba(255, 71, 87, 0.8))' } }
           }
         }
       }
@@ -62,79 +37,30 @@
   </script>
 
   <style>
-    /* Custom Styling & Glassmorphism Effects */
-    body {
-      background-color: #090a0f;
-      color: #f3f4f6;
-      font-family: 'Inter', sans-serif;
-      overflow-x: hidden;
-    }
-
-    /* Grid pattern background overlay */
-    .bg-grid-pattern {
-      background-image: radial-gradient(rgba(255, 71, 87, 0.15) 1px, transparent 0);
-      background-size: 32px 32px;
-    }
-
-    .glass-card {
-      background: rgba(15, 17, 26, 0.75);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .glass-card:hover {
-      border-color: rgba(255, 71, 87, 0.4);
-      box-shadow: 0 0 30px rgba(255, 71, 87, 0.15);
-    }
-
-    .glass-nav {
-      background: rgba(9, 10, 15, 0.85);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    .text-glow {
-      text-shadow: 0 0 15px rgba(255, 71, 87, 0.6);
-    }
-
-    .text-gradient {
-      background: linear-gradient(135deg, #ffffff 0%, #ff6b81 50%, #ff4757 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    /* Custom Scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #090a0f;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #171a26;
-      border-radius: 4px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #ff4757;
-    }
+    body { background-color: #090a0f; color: #f3f4f6; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+    .bg-grid-pattern { background-image: radial-gradient(rgba(255, 71, 87, 0.15) 1px, transparent 0); background-size: 32px 32px; }
+    .glass-card { background: rgba(15, 17, 26, 0.75); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    .glass-card:hover { border-color: rgba(255, 71, 87, 0.4); box-shadow: 0 0 30px rgba(255, 71, 87, 0.15); }
+    .glass-nav { background: rgba(9, 10, 15, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+    .text-glow { text-shadow: 0 0 15px rgba(255, 71, 87, 0.6); }
+    .text-gradient { background: linear-gradient(135deg, #ffffff 0%, #ff6b81 50%, #ff4757 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #090a0f; }
+    ::-webkit-scrollbar-thumb { background: #171a26; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #ff4757; }
   </style>
 </head>
 <body class="relative min-h-screen selection:bg-brand-500 selection:text-white">
 
-  <!-- Canvas Ambient Background -->
   <canvas id="ambient-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
 
-  <!-- Notification Toast -->
   <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 ease-out flex items-center gap-3 bg-brand-500 text-white font-semibold px-5 py-3.5 rounded-2xl shadow-2xl shadow-brand-500/30 border border-brand-400">
     <i data-lucide="check-circle" class="w-5 h-5"></i>
     <span id="toast-msg">Copied to clipboard!</span>
   </div>
 
-  <!-- Header / Navigation -->
   <header class="fixed top-0 left-0 right-0 z-40 glass-nav transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <!-- Logo -->
       <a href="#" class="flex items-center gap-3 group">
         <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-white shadow-lg shadow-brand-500/30 group-hover:scale-105 transition-transform duration-300">
           <i data-lucide="file-code-2" class="w-5 h-5"></i>
@@ -145,7 +71,6 @@
         </div>
       </a>
 
-      <!-- Desktop Links -->
       <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-gray-300">
         <a href="#about" class="hover:text-brand-500 transition-colors">About</a>
         <a href="#skills" class="hover:text-brand-500 transition-colors">Capabilities</a>
@@ -154,25 +79,20 @@
         <a href="#contact" class="hover:text-brand-500 transition-colors">Contact</a>
       </nav>
 
-      <!-- CTA Right Button -->
       <div class="hidden md:flex items-center gap-4">
         <button onclick="copyDiscord('Immersive4x4')" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-dark-700 hover:bg-dark-600 text-gray-200 text-xs font-mono border border-gray-700 transition-all active:scale-95">
           <i data-lucide="disc" class="w-4 h-4 text-brand-500"></i>
           <span>@Immersive4x4</span>
           <i data-lucide="copy" class="w-3.5 h-3.5 text-gray-400 ml-1"></i>
         </button>
-        <a href="#contact" class="px-5 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm shadow-lg shadow-brand-500/25 transition-all hover:shadow-brand-500/40 hover:-translate-y-0.5">
-          Hire Me
-        </a>
+        <a href="#contact" class="px-5 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm shadow-lg shadow-brand-500/25 transition-all hover:shadow-brand-500/40 hover:-translate-y-0.5">Hire Me</a>
       </div>
 
-      <!-- Mobile Hamburger Button -->
       <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-400 hover:text-white">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
     </div>
 
-    <!-- Mobile Drawer Nav -->
     <div id="mobile-menu" class="hidden md:hidden bg-dark-800 border-b border-gray-800 px-6 py-6 space-y-4">
       <a href="#about" class="mobile-link block text-gray-300 hover:text-brand-500 font-medium">About</a>
       <a href="#skills" class="mobile-link block text-gray-300 hover:text-brand-500 font-medium">Capabilities</a>
@@ -184,28 +104,21 @@
           <i data-lucide="disc" class="w-4 h-4 text-brand-500"></i>
           <span>Copy Discord: @Immersive4x4</span>
         </button>
-        <a href="#contact" class="mobile-link w-full text-center px-5 py-3 rounded-xl bg-brand-500 text-white font-semibold text-sm">
-          Hire Me
-        </a>
+        <a href="#contact" class="mobile-link w-full text-center px-5 py-3 rounded-xl bg-brand-500 text-white font-semibold text-sm">Hire Me</a>
       </div>
     </div>
   </header>
 
-  <!-- Main Hero Section -->
   <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 px-4 sm:px-6 lg:px-8 bg-grid-pattern overflow-hidden">
-    <!-- Hero Background Image -->
     <div class="absolute inset-0 z-0 pointer-events-none">
       <img src="assets/hero.jpg" alt="" class="w-full h-full object-cover opacity-20" />
       <div class="absolute inset-0 bg-gradient-to-b from-dark-900/80 via-dark-900/70 to-dark-900"></div>
     </div>
 
-    <!-- Glow Effect Backdrops -->
     <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-500/20 rounded-full blur-[120px] pointer-events-none"></div>
     <div class="absolute top-1/3 right-10 w-72 h-72 bg-brand-600/10 rounded-full blur-[100px] pointer-events-none"></div>
 
     <div class="max-w-5xl mx-auto text-center relative z-10 space-y-8">
-      
-      <!-- Status Badge -->
       <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-card border border-brand-500/30 text-xs font-mono text-gray-200 shadow-xl shadow-brand-500/5 animate-float">
         <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
         <span class="text-brand-500 font-bold">AVAILABLE NOW</span>
@@ -213,18 +126,15 @@
         <span>Quick replies, fast delivery.</span>
       </div>
 
-      <!-- Main Headline -->
       <h1 class="text-4xl sm:text-6xl md:text-7xl font-display font-extrabold tracking-tight leading-tight">
         Crafting High-Performance <br class="hidden sm:inline"/>
         <span class="text-gradient text-glow">Roblox Systems & Mechanics</span>
       </h1>
 
-      <!-- Subtitle -->
       <p class="max-w-2xl mx-auto text-base sm:text-lg text-gray-400 font-normal leading-relaxed">
         Senior Scripter with <span class="text-white font-semibold">5+ years of experience</span> developing clean, scalable code, seamless DataStores, interactive weapon systems, and responsive game mechanics.
       </p>
 
-      <!-- Action Buttons -->
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
         <a href="#projects" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-brand-500 to-brand-700 hover:from-brand-600 hover:to-brand-800 text-white font-bold text-base shadow-xl shadow-brand-500/30 transition-all hover:scale-105 hover:shadow-brand-500/50 flex items-center justify-center gap-3">
           <i data-lucide="play" class="w-5 h-5 fill-current"></i>
@@ -236,7 +146,6 @@
         </a>
       </div>
 
-      <!-- Highlights Ticker / Quick Stats -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-12 max-w-4xl mx-auto">
         <div class="p-4 rounded-2xl glass-card text-center">
           <div class="text-3xl font-display font-extrabold text-white text-glow">5+ Years</div>
@@ -255,32 +164,25 @@
           <div class="text-xs font-mono text-gray-400 mt-1 uppercase">Preferred / Discounted</div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- About & Philosophy Section -->
   <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 relative">
     <div class="max-w-6xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-        
-        <!-- Left Image / Avatar Graphic -->
         <div class="md:col-span-5 relative">
           <div class="aspect-square rounded-3xl bg-gradient-to-tr from-dark-800 via-dark-700 to-brand-900/30 border border-gray-800 p-8 flex flex-col justify-between relative overflow-hidden group shadow-2xl">
             <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-brand-500/20 rounded-full blur-3xl group-hover:bg-brand-500/30 transition-all"></div>
-            
             <div class="flex justify-between items-start">
               <div class="w-12 h-12 rounded-2xl bg-brand-500/20 border border-brand-500/40 flex items-center justify-center text-brand-500">
                 <i data-lucide="code-2" class="w-6 h-6"></i>
               </div>
               <span class="font-mono text-xs text-brand-500 bg-brand-500/10 px-3 py-1 rounded-full border border-brand-500/20">Scripter Tier S1</span>
             </div>
-
             <div class="space-y-3 z-10">
               <h3 class="text-2xl font-display font-bold text-white">Immersive4x4</h3>
               <p class="text-xs text-gray-400 font-mono">Specializing in Luau, Modular Systems, DataStore, Custom Tool Mechanics & UI Logic.</p>
             </div>
-
             <div class="pt-4 border-t border-gray-800/80 flex items-center justify-between text-xs text-gray-400 font-mono">
               <span>Status: <strong class="text-emerald-400">Online Everyday</strong></span>
               <span>Roblox Luau</span>
@@ -288,22 +190,17 @@
           </div>
         </div>
 
-        <!-- Right Content Text -->
         <div class="md:col-span-7 space-y-6">
           <div class="inline-flex items-center gap-2 text-brand-500 text-xs font-mono uppercase tracking-widest">
             <i data-lucide="user" class="w-4 h-4"></i> About The Developer
           </div>
-          <h2 class="text-3xl sm:text-4xl font-display font-bold text-white leading-tight">
-            Reliable, Clean Scripting Built For Smooth Gameplay
-          </h2>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-white leading-tight">Reliable, Clean Scripting Built For Smooth Gameplay</h2>
           <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
             Hey there! I'm <strong>Immersive</strong>. With over half a decade dedicated to Roblox scripting and studio architecture, I help studio teams and game creators bring complex features to life without lag, memory leaks, or unreadable code.
           </p>
           <p class="text-gray-400 leading-relaxed text-sm">
             Whether you need bug fixes, complete game systems built from scratch, or performance optimizations, I maintain constant communication and deliver modular code that is easy for you to maintain and expand.
           </p>
-
-          <!-- Core Value Bullets -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             <div class="flex items-start gap-3 p-3 rounded-xl bg-dark-800/60 border border-gray-800">
               <i data-lucide="zap" class="w-5 h-5 text-brand-500 shrink-0 mt-0.5"></i>
@@ -320,14 +217,11 @@
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Technical Capabilities / Skills Section -->
   <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-800/40 border-y border-gray-800/60">
     <div class="max-w-6xl mx-auto space-y-12">
       <div class="text-center max-w-2xl mx-auto space-y-3">
@@ -337,16 +231,12 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <!-- Skill Card 1 -->
         <div class="p-6 rounded-2xl glass-card space-y-4">
           <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-500">
             <i data-lucide="database" class="w-6 h-6"></i>
           </div>
           <h3 class="text-xl font-bold text-white">DataStores & Backend</h3>
-          <p class="text-xs text-gray-400 leading-relaxed">
-            Secure inventory saving, profile management (ProfileService/DataStore2 concepts), dynamic item spawning, and session state persistence without data loss.
-          </p>
+          <p class="text-xs text-gray-400 leading-relaxed">Secure inventory saving, profile management (ProfileService/DataStore2 concepts), dynamic item spawning, and session state persistence without data loss.</p>
           <ul class="text-xs text-gray-300 space-y-2 font-mono pt-2">
             <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-500"></i> Auto-Saving & Retry Logic</li>
             <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-500"></i> Inventory & Stacking Systems</li>
@@ -354,15 +244,12 @@
           </ul>
         </div>
 
-        <!-- Skill Card 2 -->
         <div class="p-6 rounded-2xl glass-card space-y-4">
           <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-500">
             <i data-lucide="crosshair" class="w-6 h-6"></i>
           </div>
           <h3 class="text-xl font-bold text-white">Gameplay & Weapon Mechanics</h3>
-          <p class="text-xs text-gray-400 leading-relaxed">
-            Smooth tool systems, weapon handling, raycast hit detection, custom character abilities, and interactive physics mechanics.
-          </p>
+          <p class="text-xs text-gray-400 leading-relaxed">Smooth tool systems, weapon handling, raycast hit detection, custom character abilities, and interactive physics mechanics.</p>
           <ul class="text-xs text-gray-300 space-y-2 font-mono pt-2">
             <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-500"></i> Custom Tool Handlers</li>
             <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-500"></i> FastCast / Hitbox Detection</li>
@@ -370,47 +257,35 @@
           </ul>
         </div>
 
-        <!-- Skill Card 3 -->
         <div class="p-6 rounded-2xl glass-card space-y-4">
           <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-500">
             <i data-lucide="layers" class="w-6 h-6"></i>
           </div>
           <h3 class="text-xl font-bold text-white">Game Logic & Round Systems</h3>
-          <p class="text-xs text-gray-400 leading-relaxed">
-            Intermission timers, map voting mechanics (MM2-style), minigame loops, team assignments, and UI backend connections.
-          </p>
+          <p class="text-xs text-gray-400 leading-relaxed">Intermission timers, map voting mechanics (MM2-style), minigame loops, team assignments, and UI backend connections.</p>
           <ul class="text-xs text-gray-300 space-y-2 font-mono pt-2">
             <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-500"></i> Map/Gamemode Voting</li>
             <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-500"></i> Matchmaking & Round Timers</li>
             <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-500"></i> UI Scripting & Tweens</li>
           </ul>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Pricing & Offerings Section -->
   <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 relative">
     <div class="max-w-6xl mx-auto space-y-10">
-      
       <div class="text-center max-w-2xl mx-auto space-y-3">
         <span class="text-brand-500 text-xs font-mono uppercase tracking-widest">Affordable & Negotiable</span>
         <h2 class="text-3xl font-display font-bold text-white">Services & Pricing Tiers</h2>
         <p class="text-gray-400 text-sm">Clear pricing structured per task. No long-term percentage lock-ins required!</p>
       </div>
 
-      <!-- Currency Switcher Banner -->
       <div class="max-w-md mx-auto p-1.5 rounded-2xl glass-card flex items-center justify-between border border-gray-800">
-        <button id="btn-show-usd" onclick="setCurrencyMode('usd')" class="w-1/2 py-2.5 rounded-xl font-semibold text-xs transition-all bg-brand-500 text-white shadow-md">
-          USD Rates (PayPal)
-        </button>
-        <button id="btn-show-robux" onclick="setCurrencyMode('robux')" class="w-1/2 py-2.5 rounded-xl font-semibold text-xs text-gray-400 hover:text-white transition-all">
-          Robux Rates
-        </button>
+        <button id="btn-show-usd" onclick="setCurrencyMode('usd')" class="w-1/2 py-2.5 rounded-xl font-semibold text-xs transition-all bg-brand-500 text-white shadow-md">USD Rates (PayPal)</button>
+        <button id="btn-show-robux" onclick="setCurrencyMode('robux')" class="w-1/2 py-2.5 rounded-xl font-semibold text-xs text-gray-400 hover:text-white transition-all">Robux Rates</button>
       </div>
 
-      <!-- PayPal Savings Promo Callout -->
       <div class="p-4 rounded-2xl bg-gradient-to-r from-brand-900/40 via-dark-800 to-dark-800 border border-brand-500/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 rounded-xl bg-brand-500/20 flex items-center justify-center text-brand-500 shrink-0">
@@ -421,15 +296,10 @@
             <p class="text-xs text-gray-400">PayPal prices are guaranteed to be significantly cheaper than Robux standard rates.</p>
           </div>
         </div>
-        <span class="text-xs font-mono text-brand-500 bg-brand-500/10 px-3 py-1.5 rounded-lg border border-brand-500/20 whitespace-nowrap">
-          Pay-Per-Task Preferred
-        </span>
+        <span class="text-xs font-mono text-brand-500 bg-brand-500/10 px-3 py-1.5 rounded-lg border border-brand-500/20 whitespace-nowrap">Pay-Per-Task Preferred</span>
       </div>
 
-      <!-- Pricing Cards Grid -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        <!-- Tier 1: Simple Scripting -->
         <div class="p-8 rounded-3xl glass-card flex flex-col justify-between relative group">
           <div class="space-y-6">
             <div class="space-y-2">
@@ -437,87 +307,44 @@
               <h3 class="text-2xl font-bold text-white">Simple / Bug Fixing</h3>
               <p class="text-xs text-gray-400">Perfect for quick bug fixes, single feature tweaks, or small mechanic additions.</p>
             </div>
-
-            <!-- Price display -->
             <div class="py-4 border-y border-gray-800/80">
               <div class="val-usd text-4xl font-display font-black text-white">$5 - $15 <span class="text-xs font-sans text-gray-400 font-normal">USD</span></div>
               <div class="val-robux hidden text-3xl font-display font-black text-brand-500">2,500 <span class="text-xs font-sans text-gray-400 font-normal">Robux</span></div>
               <span class="text-[11px] font-mono text-gray-400 mt-1 block">Price negotiable based on scope</span>
             </div>
-
-            <!-- Features -->
             <ul class="space-y-3 text-xs text-gray-300">
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i>
-                <span>Script debugging & error fixes</span>
-              </li>
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i>
-                <span>Basic UI button connections</span>
-              </li>
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i>
-                <span>Door, leaderstat, or trigger scripts</span>
-              </li>
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i>
-                <span>Fast 24-48 hour delivery</span>
-              </li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i><span>Script debugging & error fixes</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i><span>Basic UI button connections</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i><span>Door, leaderstat, or trigger scripts</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i><span>Fast 24-48 hour delivery</span></li>
             </ul>
           </div>
-
-          <a href="#contact" class="mt-8 w-full py-3 rounded-xl bg-dark-700 hover:bg-brand-500 text-white font-semibold text-xs text-center transition-all">
-            Order Simple Task
-          </a>
+          <a href="#contact" class="mt-8 w-full py-3 rounded-xl bg-dark-700 hover:bg-brand-500 text-white font-semibold text-xs text-center transition-all">Order Simple Task</a>
         </div>
 
-        <!-- Tier 2: Intermediate Scripting (Highlighted) -->
         <div class="p-8 rounded-3xl glass-card flex flex-col justify-between relative border-2 border-brand-500/60 shadow-2xl shadow-brand-500/10">
-          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-brand-500 text-white text-[10px] font-mono font-bold uppercase tracking-wider shadow-md">
-            Most Popular
-          </div>
-
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-brand-500 text-white text-[10px] font-mono font-bold uppercase tracking-wider shadow-md">Most Popular</div>
           <div class="space-y-6">
             <div class="space-y-2">
               <span class="text-xs font-mono text-brand-500 uppercase tracking-widest">Mid Tier</span>
               <h3 class="text-2xl font-bold text-white">Intermediate Scripting</h3>
               <p class="text-xs text-gray-400">Complete standalone mechanics, dynamic tools, and DataStore setups.</p>
             </div>
-
-            <!-- Price display -->
             <div class="py-4 border-y border-gray-800/80">
               <div class="val-usd text-4xl font-display font-black text-white">$15 - $50 <span class="text-xs font-sans text-gray-400 font-normal">USD</span></div>
               <div class="val-robux hidden text-3xl font-display font-black text-brand-500">5,000 <span class="text-xs font-sans text-gray-400 font-normal">Robux</span></div>
               <span class="text-[11px] font-mono text-gray-400 mt-1 block">Best value for feature additions</span>
             </div>
-
-            <!-- Features -->
             <ul class="space-y-3 text-xs text-gray-300">
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i>
-                <span>Custom inventory / DataStore setup</span>
-              </li>
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i>
-                <span>Smooth interactive tool mechanics</span>
-              </li>
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i>
-                <span>Item spawning & pickup logic</span>
-              </li>
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i>
-                <span>Map voting systems (MM2 style)</span>
-              </li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i><span>Custom inventory / DataStore setup</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i><span>Smooth interactive tool mechanics</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i><span>Item spawning & pickup logic</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i><span>Map voting systems (MM2 style)</span></li>
             </ul>
           </div>
-
-          <a href="#contact" class="mt-8 w-full py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-semibold text-xs text-center transition-all shadow-lg shadow-brand-500/20">
-            Order Intermediate System
-          </a>
+          <a href="#contact" class="mt-8 w-full py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-semibold text-xs text-center transition-all shadow-lg shadow-brand-500/20">Order Intermediate System</a>
         </div>
 
-        <!-- Tier 3: Advanced Systems -->
         <div class="p-8 rounded-3xl glass-card flex flex-col justify-between relative group">
           <div class="space-y-6">
             <div class="space-y-2">
@@ -525,54 +352,30 @@
               <h3 class="text-2xl font-bold text-white">Advanced Systems</h3>
               <p class="text-xs text-gray-400">Complex game loops, full backend infrastructure, and core game frameworks.</p>
             </div>
-
-            <!-- Price display -->
             <div class="py-4 border-y border-gray-800/80">
               <div class="val-usd text-4xl font-display font-black text-white">$50+ <span class="text-xs font-sans text-gray-400 font-normal">USD</span></div>
               <div class="val-robux hidden text-3xl font-display font-black text-brand-500">10,000+ <span class="text-xs font-sans text-gray-400 font-normal">Robux</span></div>
               <span class="text-[11px] font-mono text-gray-400 mt-1 block">Custom quotes per project spec</span>
             </div>
-
-            <!-- Features -->
             <ul class="space-y-3 text-xs text-gray-300">
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i>
-                <span>Entire mini-game loop / gamemode</span>
-              </li>
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i>
-                <span>Advanced combat & skill trees</span>
-              </li>
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i>
-                <span>Complete framework optimization</span>
-              </li>
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i>
-                <span>Priority everyday support</span>
-              </li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i><span>Entire mini-game loop / gamemode</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i><span>Advanced combat & skill trees</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i><span>Complete framework optimization</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-500"></i><span>Priority everyday support</span></li>
             </ul>
           </div>
-
-          <a href="#contact" class="mt-8 w-full py-3 rounded-xl bg-dark-700 hover:bg-brand-500 text-white font-semibold text-xs text-center transition-all">
-            Discuss Custom Project
-          </a>
+          <a href="#contact" class="mt-8 w-full py-3 rounded-xl bg-dark-700 hover:bg-brand-500 text-white font-semibold text-xs text-center transition-all">Discuss Custom Project</a>
         </div>
-
       </div>
 
-      <!-- Payment Notes Footnote -->
       <p class="text-center text-xs text-gray-400 font-mono">
         * Payment Methods: <strong>PayPal</strong> (Preferred), <strong>Robux</strong>, and <strong>Robux Gift Cards</strong>. No percentages accepted unless upfront payment is provided.
       </p>
-
     </div>
   </section>
 
-  <!-- Past Work / Projects Grid -->
   <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-800/30 border-t border-gray-800/60">
     <div class="max-w-6xl mx-auto space-y-12">
-      
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div class="space-y-2">
           <span class="text-brand-500 text-xs font-mono uppercase tracking-widest">Demonstrated Work</span>
@@ -580,148 +383,30 @@
           <p class="text-gray-400 text-sm">Explore examples of systems and mechanics built for client games.</p>
         </div>
 
-        <!-- Filter Buttons -->
         <div class="flex flex-wrap gap-2">
-          <button onclick="filterProjects('all')" class="proj-filter-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-brand-500 text-white transition-all">All Projects</button>
-          <button onclick="filterProjects('systems')" class="proj-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-dark-700 text-gray-300 hover:text-white transition-all">Systems</button>
-          <button onclick="filterProjects('tools')" class="proj-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-dark-700 text-gray-300 hover:text-white transition-all">Tool Mechanics</button>
+          <button onclick="filterProjects('all', this)" class="proj-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-brand-500 text-white transition-all">All Projects</button>
+          <button onclick="filterProjects('systems', this)" class="proj-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-dark-700 text-gray-300 hover:text-white transition-all">Systems</button>
+          <button onclick="filterProjects('tools', this)" class="proj-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-dark-700 text-gray-300 hover:text-white transition-all">Tool Mechanics</button>
         </div>
       </div>
 
-      <!-- Projects Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        <!-- Project 1: Voting System -->
-        <div class="project-card glass-card rounded-3xl overflow-hidden group border border-gray-800" data-category="systems">
-          <div class="relative h-60 bg-dark-900 overflow-hidden flex items-center justify-center">
-            <img src="assets/project1.jpg" alt="Voting System (MM2) project preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            <div class="absolute inset-0 bg-gradient-to-t from-dark-900/80 via-transparent to-transparent"></div>
-            <div class="absolute top-4 left-4">
-              <span class="px-3 py-1 rounded-full bg-dark-900/80 backdrop-blur-md border border-gray-700 text-[10px] font-mono text-brand-500 font-bold uppercase">
-                MM2-Style Logic
-              </span>
-            </div>
-          </div>
-          
-          <div class="p-6 space-y-3">
-            <h3 class="text-xl font-bold text-white group-hover:text-brand-500 transition-colors">Voting System (MM2)</h3>
-            <p class="text-xs text-gray-400 leading-relaxed">
-              Advanced, bug-free map and mode voting framework with real-time tallying, smooth UI animations, and randomized tie-breaker logic.
-            </p>
-            <div class="pt-2 flex items-center justify-between">
-              <span class="text-[11px] font-mono text-gray-400">Features: Real-time Sync, Timer Logic</span>
-              <button onclick="openModal('Voting System (MM2)', 'This system features map selection, mode selection, synchronized server timer countdowns, and client-side UI animations inspired by Murder Mystery 2.')" class="text-xs font-semibold text-brand-500 hover:underline flex items-center gap-1">
-                Details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2: Advanced Tool System -->
-        <div class="project-card glass-card rounded-3xl overflow-hidden group border border-gray-800" data-category="tools">
-          <div class="relative h-60 bg-dark-900 overflow-hidden flex items-center justify-center">
-            <img src="assets/project2.jpg" alt="Advanced Tool System project preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            <div class="absolute inset-0 bg-gradient-to-t from-dark-900/80 via-transparent to-transparent"></div>
-            <div class="absolute top-4 left-4">
-              <span class="px-3 py-1 rounded-full bg-dark-900/80 backdrop-blur-md border border-gray-700 text-[10px] font-mono text-brand-500 font-bold uppercase">
-                Tool Mechanics
-              </span>
-            </div>
-          </div>
-          
-          <div class="p-6 space-y-3">
-            <h3 class="text-xl font-bold text-white group-hover:text-brand-500 transition-colors">Advanced Tool System</h3>
-            <p class="text-xs text-gray-400 leading-relaxed">
-              Smooth, interactable, and highly responsive tool handling with custom equip animations, cooldown handlers, and server verification.
-            </p>
-            <div class="pt-2 flex items-center justify-between">
-              <span class="text-[11px] font-mono text-gray-400">Features: Custom Animations, Anti-Exploit</span>
-              <button onclick="openModal('Advanced Tool System', 'Includes modular weapon & utility interaction scripts, custom keybind listeners, server-validated hit registration, and polished equip/holster sound effects.')" class="text-xs font-semibold text-brand-500 hover:underline flex items-center gap-1">
-                Details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3: Inventory System -->
-        <div class="project-card glass-card rounded-3xl overflow-hidden group border border-gray-800" data-category="systems">
-          <div class="relative h-60 bg-dark-900 overflow-hidden flex items-center justify-center">
-            <img src="assets/project3.jpg" alt="Inventory System project preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            <div class="absolute inset-0 bg-gradient-to-t from-dark-900/80 via-transparent to-transparent"></div>
-            <div class="absolute top-4 left-4">
-              <span class="px-3 py-1 rounded-full bg-dark-900/80 backdrop-blur-md border border-gray-700 text-[10px] font-mono text-brand-500 font-bold uppercase">
-                DataStored
-              </span>
-            </div>
-          </div>
-          
-          <div class="p-6 space-y-3">
-            <h3 class="text-xl font-bold text-white group-hover:text-brand-500 transition-colors">Inventory System</h3>
-            <p class="text-xs text-gray-400 leading-relaxed">
-              Full DataStored inventory pipeline supporting stackable items, item dropping, equipping, and item metadata management.
-            </p>
-            <div class="pt-2 flex items-center justify-between">
-              <span class="text-[11px] font-mono text-gray-400">Features: Persistent Data, Drag & Drop</span>
-              <button onclick="openModal('Inventory System', 'Fully backed by DataStore2/ProfileService logic to prevent item loss during server crashes or fast leaves. Supports grid layout updates and quick hotbar slots.')" class="text-xs font-semibold text-brand-500 hover:underline flex items-center gap-1">
-                Details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4: Smooth Tool Spawning & Persistence -->
-        <div class="project-card glass-card rounded-3xl overflow-hidden group border border-gray-800" data-category="tools">
-          <div class="relative h-60 bg-dark-900 overflow-hidden flex items-center justify-center">
-            <video class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" autoplay muted loop playsinline preload="metadata" aria-label="Smooth Tool and Item Spawner project preview">
-              <source src="assets/project4.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div class="absolute inset-0 bg-gradient-to-t from-dark-900/80 via-transparent to-transparent"></div>
-            <div class="absolute top-4 left-4">
-              <span class="px-3 py-1 rounded-full bg-dark-900/80 backdrop-blur-md border border-gray-700 text-[10px] font-mono text-brand-500 font-bold uppercase">
-                Spawning Mechanics
-              </span>
-            </div>
-          </div>
-          
-          <div class="p-6 space-y-3">
-            <h3 class="text-xl font-bold text-white group-hover:text-brand-500 transition-colors">Smooth Tool & Item Spawner</h3>
-            <p class="text-xs text-gray-400 leading-relaxed">
-              Interactive map spawning mechanics, pickup notifications, and tool state saving with custom physics smoothing.
-            </p>
-            <div class="pt-2 flex items-center justify-between">
-              <span class="text-[11px] font-mono text-gray-400">Features: Dynamic Spawning, Network Optimizations</span>
-              <button onclick="openModal('Smooth Tool & Item Spawner', 'Handles world item nodes, dynamic respawn timers, ProximityPrompt interactions, and inventory auto-pickup thresholds.')" class="text-xs font-semibold text-brand-500 hover:underline flex items-center gap-1">
-                Details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
+      <!-- Projects Grid is now dynamically rendered from the `projects` array -->
+      <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
     </div>
   </section>
 
-  <!-- Contact & Hiring Section -->
   <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 relative">
     <div class="max-w-4xl mx-auto space-y-10">
-      
       <div class="p-8 sm:p-12 rounded-3xl glass-card border border-brand-500/30 text-center space-y-8 relative overflow-hidden">
         <div class="absolute -top-24 -right-24 w-60 h-60 bg-brand-500/20 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="space-y-3 max-w-xl mx-auto">
           <span class="text-brand-500 text-xs font-mono uppercase tracking-widest">Get In Touch</span>
           <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">Ready to Build Your Game?</h2>
-          <p class="text-gray-400 text-sm">
-            I am available everyday. Send me your task description or game specifications and let's get it created!
-          </p>
+          <p class="text-gray-400 text-sm">I am available everyday. Send me your task description or game specifications and let's get it created!</p>
         </div>
 
-        <!-- Contact Links Cards -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          
-          <!-- Discord -->
           <div class="p-5 rounded-2xl bg-dark-800 border border-gray-800 hover:border-brand-500/50 transition-all flex flex-col items-center justify-center space-y-3 group">
             <div class="w-10 h-10 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-500 group-hover:scale-110 transition-transform">
               <i data-lucide="disc" class="w-5 h-5"></i>
@@ -730,12 +415,9 @@
               <span class="block text-xs font-mono text-gray-400 uppercase">Discord</span>
               <span class="text-sm font-bold text-white">@Immersive4x4</span>
             </div>
-            <button onclick="copyDiscord('Immersive4x4')" class="text-[11px] text-brand-500 font-semibold hover:underline">
-              Copy Username
-            </button>
+            <button onclick="copyDiscord('Immersive4x4')" class="text-[11px] text-brand-500 font-semibold hover:underline">Copy Username</button>
           </div>
 
-          <!-- GitHub -->
           <a href="https://github.com/Immersive4x4" target="_blank" class="p-5 rounded-2xl bg-dark-800 border border-gray-800 hover:border-brand-500/50 transition-all flex flex-col items-center justify-center space-y-3 group">
             <div class="w-10 h-10 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-500 group-hover:scale-110 transition-transform">
               <i data-lucide="github" class="w-5 h-5"></i>
@@ -747,7 +429,6 @@
             <span class="text-[11px] text-brand-500 font-semibold group-hover:underline">View Repositories</span>
           </a>
 
-          <!-- Email -->
           <a href="mailto:immersive69420@gmail.com" class="p-5 rounded-2xl bg-dark-800 border border-gray-800 hover:border-brand-500/50 transition-all flex flex-col items-center justify-center space-y-3 group">
             <div class="w-10 h-10 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-500 group-hover:scale-110 transition-transform">
               <i data-lucide="mail" class="w-5 h-5"></i>
@@ -758,23 +439,18 @@
             </div>
             <span class="text-[11px] text-brand-500 font-semibold group-hover:underline">Send Email</span>
           </a>
-
         </div>
 
-        <!-- DM Direct Button -->
         <div class="pt-4">
           <button onclick="copyDiscord('Immersive4x4')" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm shadow-xl shadow-brand-500/30 transition-all hover:scale-105 inline-flex items-center justify-center gap-3">
             <i data-lucide="message-square" class="w-5 h-5"></i>
             <span>Copy Discord & Message Me</span>
           </button>
         </div>
-
       </div>
-
     </div>
   </section>
 
-  <!-- Modal Popup for Project Details -->
   <div id="project-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
     <div class="glass-card max-w-lg w-full rounded-3xl p-6 space-y-4 border border-gray-700 relative animate-float">
       <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white p-2">
@@ -783,14 +459,11 @@
       <h3 id="modal-title" class="text-2xl font-bold text-white">Project Title</h3>
       <p id="modal-desc" class="text-xs text-gray-300 leading-relaxed">Project description content goes here.</p>
       <div class="pt-4 border-t border-gray-800 flex justify-end">
-        <button onclick="closeModal()" class="px-5 py-2 rounded-xl bg-brand-500 text-white font-semibold text-xs">
-          Close Preview
-        </button>
+        <button onclick="closeModal()" class="px-5 py-2 rounded-xl bg-brand-500 text-white font-semibold text-xs">Close Preview</button>
       </div>
     </div>
   </div>
 
-  <!-- Footer -->
   <footer class="py-8 border-t border-gray-800/80 text-center text-xs text-gray-400 font-mono">
     <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
       <p>© 2026 Immersive4x4 — Roblox Portfolio. All Rights Reserved.</p>
@@ -800,95 +473,158 @@
     </div>
   </footer>
 
-  <!-- Inline Script Logic -->
   <script>
-    // Initialize Lucide Icons
-    lucide.createIcons();
+    // ============================================
+    // PROJECT DATA — ADD NEW PROJECTS HERE
+    // Just add one object to this array to add a new project card.
+    // ============================================
+    const projects = [
+      {
+        title: 'Voting System (MM2)',
+        category: 'systems',
+        tag: 'MM2-Style Logic',
+        description: 'Advanced, bug-free map and mode voting framework with real-time tallying, smooth UI animations, and randomized tie-breaker logic.',
+        features: 'Features: Real-time Sync, Timer Logic',
+        mediaType: 'image',
+        mediaSrc: 'assets/project1.jpg',
+        modalDesc: 'This system features map selection, mode selection, synchronized server timer countdowns, and client-side UI animations inspired by Murder Mystery 2.'
+      },
+      {
+        title: 'Advanced Tool System',
+        category: 'tools',
+        tag: 'Tool Mechanics',
+        description: 'Smooth, interactable, and highly responsive tool handling with custom equip animations, cooldown handlers, and server verification.',
+        features: 'Features: Custom Animations, Anti-Exploit',
+        mediaType: 'image',
+        mediaSrc: 'assets/project2.jpg',
+        modalDesc: 'Includes modular weapon & utility interaction scripts, custom keybind listeners, server-validated hit registration, and polished equip/holster sound effects.'
+      },
+      {
+        title: 'Inventory System',
+        category: 'systems',
+        tag: 'DataStored',
+        description: 'Full DataStored inventory pipeline supporting stackable items, item dropping, equipping, and item metadata management.',
+        features: 'Features: Persistent Data, Drag & Drop',
+        mediaType: 'image',
+        mediaSrc: 'assets/project3.jpg',
+        modalDesc: 'Fully backed by DataStore2/ProfileService logic to prevent item loss during server crashes or fast leaves. Supports grid layout updates and quick hotbar slots.'
+      },
+      {
+        title: 'Smooth Tool & Item Spawner',
+        category: 'tools',
+        tag: 'Spawning Mechanics',
+        description: 'Interactive map spawning mechanics, pickup notifications, and tool state saving with custom physics smoothing.',
+        features: 'Features: Dynamic Spawning, Network Optimizations',
+        mediaType: 'video',
+        mediaSrc: 'assets/project4.mp4',
+        modalDesc: 'Handles world item nodes, dynamic respawn timers, ProximityPrompt interactions, and inventory auto-pickup thresholds.'
+      },
+       {title: 'Fully scripted AK47',
+        category: 'tools',
+        tag: 'Guns',
+        description: 'Automatic Gun',
+        features: 'Custom Properties',
+        mediaType: 'video',
+        mediaSrc: 'assets/project5.mp4',
+        modalDesc: 'nil'
+       },
+       {title: 'Apex Admin Panel',
+        category: 'systems',
+        tag: 'Admin Panel',
+        description: 'Custom Admin Panel with custom commands implemented',
+        features: 'Can add custom commands',
+        mediaType: 'image',
+        mediaSrc: 'assets/project6.jpg.png',
+        modalDesc: 'nil'
+    },
+    {title: 'Shop System',
+        category: 'systems',
+        tag: 'Gamepass Shop',
+        description: 'Gamepass Shop/Item shop/General Shop',
+        features: 'Custom items/Gamepasses/System',
+        mediaType:'image',
+        mediaSrc: 'assets/project7.jpg.png',
+        modalDesc: 'nil'},
+    {title: 'Quest systems',
+        category: 'systems',
+        tag: 'Trading/Quest System',
+        description: 'Global Trades/Quest',
+        features: 'Customizable',
+        mediaType:'image',
+        mediaSrc: 'assets/project8.png',
+        modalDesc: 'nil'},
+    {title: 'Leaderboards',
+        category: 'systems',
+        tag: 'Datasaving Leaderboards',
+        description: 'Donation/Stats/Others leaderboard',
+        features: 'Custom type donation/Stats',
+        mediaType:'image',
+        mediaSrc: 'assets/project9.png',
+        modalDesc: 'nil'},
+    {title: 'Lobby/Teleporting system',
+        category: 'systems',
+        tag: 'Teleporting from lobby to map',
+        description: 'Good for horror games, team type games etc.',
+        features: 'Custom properties',
+        mediaType:'image',
+        mediaSrc: 'assets/project10.png',
+        modalDesc: 'nil'}
+    ];
 
-    // Mobile Menu Toggle
-    const menuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
+    // ============================================
+    // RENDER PROJECTS
+    // ============================================
+    function renderProjects() {
+      const grid = document.getElementById('projects-grid');
+      grid.innerHTML = projects.map((p, index) => `
+        <div class="project-card glass-card rounded-3xl overflow-hidden group border border-gray-800" data-category="${p.category}">
+          <div class="relative h-60 bg-dark-900 overflow-hidden flex items-center justify-center">
+            ${p.mediaType === 'video'
+              ? `<video class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" autoplay muted loop playsinline preload="metadata" aria-label="${p.title} project preview">
+                   <source src="${p.mediaSrc}" type="video/mp4" />
+                   Your browser does not support the video tag.
+                 </video>`
+              : `<img src="${p.mediaSrc}" alt="${p.title} project preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />`
+            }
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900/80 via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full bg-dark-900/80 backdrop-blur-md border border-gray-700 text-[10px] font-mono text-brand-500 font-bold uppercase">
+                ${p.tag}
+              </span>
+            </div>
+          </div>
 
-    document.querySelectorAll('.mobile-link').forEach(link => {
-      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
-    });
-
-    // Copy Discord Function
-    function copyDiscord(tag) {
-      const el = document.createElement('textarea');
-      el.value = tag;
-      document.body.appendChild(el);
-      el.select();
-      document.execCommand('copy');
-      document.body.removeChild(el);
-
-      showToast(`Copied "${tag}" to clipboard!`);
+          <div class="p-6 space-y-3">
+            <h3 class="text-xl font-bold text-white group-hover:text-brand-500 transition-colors">${p.title}</h3>
+            <p class="text-xs text-gray-400 leading-relaxed">${p.description}</p>
+            <div class="pt-2 flex items-center justify-between">
+              <span class="text-[11px] font-mono text-gray-400">${p.features}</span>
+              <button onclick="openModal(${index})" class="text-xs font-semibold text-brand-500 hover:underline flex items-center gap-1">
+                Details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+      lucide.createIcons();
     }
 
-    // Toast Notification Function
-    function showToast(msg) {
-      const toast = document.getElementById('toast');
-      const toastMsg = document.getElementById('toast-msg');
-      toastMsg.innerText = msg;
-
-      toast.classList.remove('translate-y-20', 'opacity-0');
-      toast.classList.add('translate-y-0', 'opacity-100');
-
-      setTimeout(() => {
-        toast.classList.remove('translate-y-0', 'opacity-100');
-        toast.classList.add('translate-y-20', 'opacity-0');
-      }, 3000);
-    }
-
-    // Currency Toggle Logic
-    function setCurrencyMode(mode) {
-      const btnUsd = document.getElementById('btn-show-usd');
-      const btnRobux = document.getElementById('btn-show-robux');
-      const valsUsd = document.querySelectorAll('.val-usd');
-      const valsRobux = document.querySelectorAll('.val-robux');
-
-      if (mode === 'usd') {
-        btnUsd.className = "w-1/2 py-2.5 rounded-xl font-semibold text-xs transition-all bg-brand-500 text-white shadow-md";
-        btnRobux.className = "w-1/2 py-2.5 rounded-xl font-semibold text-xs text-gray-400 hover:text-white transition-all";
-        
-        valsUsd.forEach(el => el.classList.remove('hidden'));
-        valsRobux.forEach(el => el.classList.add('hidden'));
-      } else {
-        btnRobux.className = "w-1/2 py-2.5 rounded-xl font-semibold text-xs transition-all bg-brand-500 text-white shadow-md";
-        btnUsd.className = "w-1/2 py-2.5 rounded-xl font-semibold text-xs text-gray-400 hover:text-white transition-all";
-
-        valsRobux.forEach(el => el.classList.remove('hidden'));
-        valsUsd.forEach(el => el.classList.add('hidden'));
-      }
-    }
-
-    // Modal Popup Logic
-    function openModal(title, desc) {
-      document.getElementById('modal-title').innerText = title;
-      document.getElementById('modal-desc').innerText = desc;
-      document.getElementById('project-modal').classList.remove('hidden');
-    }
-
-    function closeModal() {
-      document.getElementById('project-modal').classList.add('hidden');
-    }
-
-    // Project Filtering Logic
-    function filterProjects(category) {
+    // ============================================
+    // FILTER PROJECTS
+    // ============================================
+    function filterProjects(category, btn) {
       const cards = document.querySelectorAll('.project-card');
       const btns = document.querySelectorAll('.proj-filter-btn');
 
-      btns.forEach(btn => {
-        btn.classList.remove('bg-brand-500', 'text-white');
-        btn.classList.add('bg-dark-700', 'text-gray-300');
+      btns.forEach(b => {
+        b.classList.remove('bg-brand-500', 'text-white');
+        b.classList.add('bg-dark-700', 'text-gray-300');
       });
 
-      event.target.classList.remove('bg-dark-700', 'text-gray-300');
-      event.target.classList.add('bg-brand-500', 'text-white');
+      if (btn) {
+        btn.classList.remove('bg-dark-700', 'text-gray-300');
+        btn.classList.add('bg-brand-500', 'text-white');
+      }
 
       cards.forEach(card => {
         if (category === 'all' || card.dataset.category === category) {
@@ -899,22 +635,88 @@
       });
     }
 
-    // Ambient Floating Canvas Background Animation
+    // ============================================
+    // MODAL
+    // ============================================
+    function openModal(index) {
+      const p = projects[index];
+      document.getElementById('modal-title').innerText = p.title;
+      document.getElementById('modal-desc').innerText = p.modalDesc;
+      document.getElementById('project-modal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('project-modal').classList.add('hidden');
+    }
+
+    // ============================================
+    // OTHER UI LOGIC
+    // ============================================
+    function copyDiscord(tag) {
+      const el = document.createElement('textarea');
+      el.value = tag;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+      showToast(`Copied "${tag}" to clipboard!`);
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-msg');
+      toastMsg.innerText = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3000);
+    }
+
+    function setCurrencyMode(mode) {
+      const btnUsd = document.getElementById('btn-show-usd');
+      const btnRobux = document.getElementById('btn-show-robux');
+      const valsUsd = document.querySelectorAll('.val-usd');
+      const valsRobux = document.querySelectorAll('.val-robux');
+
+      if (mode === 'usd') {
+        btnUsd.className = "w-1/2 py-2.5 rounded-xl font-semibold text-xs transition-all bg-brand-500 text-white shadow-md";
+        btnRobux.className = "w-1/2 py-2.5 rounded-xl font-semibold text-xs text-gray-400 hover:text-white transition-all";
+        valsUsd.forEach(el => el.classList.remove('hidden'));
+        valsRobux.forEach(el => el.classList.add('hidden'));
+      } else {
+        btnRobux.className = "w-1/2 py-2.5 rounded-xl font-semibold text-xs transition-all bg-brand-500 text-white shadow-md";
+        btnUsd.className = "w-1/2 py-2.5 rounded-xl font-semibold text-xs text-gray-400 hover:text-white transition-all";
+        valsRobux.forEach(el => el.classList.remove('hidden'));
+        valsUsd.forEach(el => el.classList.add('hidden'));
+      }
+    }
+
+    // Mobile Menu
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // Initialize
+    renderProjects();
+    lucide.createIcons();
+
+    // Ambient Canvas
     window.onload = function() {
       const canvas = document.getElementById('ambient-canvas');
       const ctx = canvas.getContext('2d');
-
       let width = canvas.width = window.innerWidth;
       let height = canvas.height = window.innerHeight;
-
       window.addEventListener('resize', () => {
         width = canvas.width = window.innerWidth;
         height = canvas.height = window.innerHeight;
       });
-
       const particles = [];
       const particleCount = 35;
-
       for (let i = 0; i < particleCount; i++) {
         particles.push({
           x: Math.random() * width,
@@ -925,19 +727,15 @@
           alpha: Math.random() * 0.5 + 0.2
         });
       }
-
       function animate() {
         ctx.clearRect(0, 0, width, height);
-
         particles.forEach(p => {
           p.x += p.vx;
           p.y += p.vy;
-
           if (p.x < 0) p.x = width;
           if (p.x > width) p.x = 0;
           if (p.y < 0) p.y = height;
           if (p.y > height) p.y = 0;
-
           ctx.beginPath();
           ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
           ctx.fillStyle = `rgba(255, 71, 87, ${p.alpha})`;
@@ -945,10 +743,8 @@
           ctx.shadowColor = '#ff4757';
           ctx.fill();
         });
-
         requestAnimationFrame(animate);
       }
-
       animate();
     };
   </script>
